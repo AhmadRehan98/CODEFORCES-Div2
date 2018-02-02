@@ -20,10 +20,8 @@ int main() {
     int nines = check (ground);
     long long m=1;
     while (true){
-        while ((ground%(m*10))/m != 9 && ground <= roof) {
-            //int mod = (ground%(m*10))/m;
+        while ((ground%(m*10))/m != 9 && ground <= roof) 
             ground+= m;
-        }
         if (ground > roof){
             ground -= m;
             flag = true;
